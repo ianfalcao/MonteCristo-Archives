@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ian Falcao">
+    <meta name="description" content="Perfis de 14 personagens, relações com Edmond e destinos no livro e no filme de 2024.">
+    <title>Os Personagens | MonteCristo Archives</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/main.js" defer></script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+        <a class="site-logo" href="/Monte_cristo/index.html" aria-label="MonteCristo Archives — Início">
+            <span>MONTECRISTO</span><br>
+            <span>ARCHIVES</span>
+        </a>
+        <button type="button" class="menu-toggle" data-menu-toggle
+                aria-controls="menu-principal" aria-expanded="true" hidden>
+            Menu principal
+        </button>
+        <nav id="menu-principal" aria-label="Navegação principal">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html" aria-current="page">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html">O Plano</a></li>
+                <li><a href="livro-filme.html">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+        <header class="page-intro">
+            <p>Arquivo 02 · Pessoas e identidades</p>
+            <h1>Os Personagens</h1>
+            <p>Conheça os vínculos do romance e consulte os destinos em cada versão.</p>
+            <p><strong>Aviso:</strong> esta página revela acontecimentos e desfechos da história.</p>
+        </header>
+
+        <!-- main.js habilita os filtros após registrar seus eventos. -->
+        <fieldset class="filters" data-character-filters disabled>
+            <legend>Filtrar por categoria</legend>
+            <button type="button" data-filter="todos" aria-controls="lista-personagens" aria-pressed="true">Todos</button>
+            <button type="button" data-filter="protagonista" aria-controls="lista-personagens" aria-pressed="false">Protagonista</button>
+            <button type="button" data-filter="aliados" aria-controls="lista-personagens" aria-pressed="false">Aliados</button>
+            <button type="button" data-filter="alvos" aria-controls="lista-personagens" aria-pressed="false">Alvos</button>
+            <button type="button" data-filter="familia" aria-controls="lista-personagens" aria-pressed="false">Família</button>
+            <button type="button" data-filter="outros" aria-controls="lista-personagens" aria-pressed="false">Outros</button>
+        </fieldset>
+        <p id="personagens-status" role="status">14 personagens · Todas as categorias</p>
+        <!-- As categorias são editoriais: Família reúne os núcleos familiares da trama.
+             Os perfis em details continuam acessíveis antes da implementação do modal. -->
+        <section id="lista-personagens" aria-labelledby="lista-titulo">
+            <h2 id="lista-titulo">Índice de personagens</h2>
+            <article id="edmond" class="character-card" data-character="edmond" data-category="protagonista" data-name="Edmond Dantès / Conde de Monte Cristo" data-modal-target="personagem-modal">
+                <h3 data-field="name">Edmond Dantès / Conde de Monte Cristo</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/edmond-dantes.jpg" alt="Gravura de Edmond jovem, de boné e camisa aberta, junto à amurada e às cordas de um navio." width="595" height="705" loading="lazy" decoding="async">
+                    <figcaption>Edmond Dantès — ilustração do romance. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Conduz a busca por reparação.</p>
+                <details id="perfil-edmond" data-character-profile>
+                    <summary>Ler perfil de Edmond Dantès / Conde de Monte Cristo</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Marinheiro; depois, Conde de Monte Cristo.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Conduz a busca por reparação.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">É o próprio Edmond, antes e depois da prisão.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Inteligência, perseverança e desejo de controle.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Parte com Haydée após reconhecer limites para sua vingança.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Parte sozinho e deixa uma carta para Mercédès.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="edmond" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Edmond Dantès / Conde de Monte Cristo</button>
+            </article>
+            <article id="mercedes" class="character-card" data-character="mercedes" data-category="familia" data-name="Mercédès" data-modal-target="personagem-modal">
+                <h3 data-field="name">Mercédès</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/mercedes-gravura.jpg" alt="Gravura de Mercédès sentada em uma poltrona, com uma das mãos junto ao rosto." width="599" height="702" loading="lazy" decoding="async">
+                    <figcaption>Mercédès, condessa de Morcerf — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Liga o presente do conde ao amor perdido.</p>
+                <details id="perfil-mercedes" data-character-profile>
+                    <summary>Ler perfil de Mercédès</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Noiva de Edmond; depois, esposa de Fernand.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Liga o presente do conde ao amor perdido.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Antiga noiva; reconhece o homem por trás da nova identidade.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Sensibilidade, coragem e cuidado com Albert.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Abandona Fernand e retorna a Marselha.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Deixa Fernand e recebe a carta de despedida de Edmond.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="mercedes" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Mercédès</button>
+            </article>
+            <article id="fernand" class="character-card" data-character="fernand" data-category="alvos" data-name="Fernand Mondego" data-modal-target="personagem-modal">
+                <h3 data-field="name">Fernand Mondego</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/fernand-gravura.jpg" alt="Gravura de Fernand com uniforme militar, medalhas e chapéu apoiado ao lado." width="574" height="682" loading="lazy" decoding="async">
+                    <figcaption>Fernand, conde de Morcerf — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Participa da traição e enfrenta a exposição de seu passado.</p>
+                <details id="perfil-fernand" data-character-profile>
+                    <summary>Ler perfil de Fernand Mondego</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Torna-se conde de Morcerf.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Participa da traição e enfrenta a exposição de seu passado.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Rival amoroso e um dos responsáveis pela prisão.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Ciúme, ambição e preocupação com a honra pública.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Suicida-se após a ruína de sua reputação e a partida da família.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">É vencido em duelo e poupado por Edmond.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="fernand" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Fernand Mondego</button>
+            </article>
+            <article id="danglars" class="character-card" data-character="danglars" data-category="alvos" data-name="Danglars" data-modal-target="personagem-modal">
+                <h3 data-field="name">Danglars</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/danglars-gravura.jpg" alt="Gravura de Danglars de braços cruzados, apoiado em um muro, diante do mar." width="600" height="698" loading="lazy" decoding="async">
+                    <figcaption>Danglars — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Converte inveja e ambição em uma denúncia.</p>
+                <details id="perfil-danglars" data-character-profile>
+                    <summary>Ler perfil de Danglars</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Funcionário do Pharaon; depois, banqueiro e barão.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Converte inveja e ambição em uma denúncia.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Conspirador contra Edmond.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Ganância e oportunismo.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Perde quase toda a fortuna, mas recebe o perdão de Edmond.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Perde sua fortuna e o controle de seus bens.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="danglars" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Danglars</button>
+            </article>
+            <article id="villefort" class="character-card" data-character="villefort" data-category="alvos" data-name="Gérard de Villefort" data-modal-target="personagem-modal">
+                <h3 data-field="name">Gérard de Villefort</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/villefort-gravura.jpg" alt="Gravura de Villefort de pé, com roupa escura, ao lado de uma mesa coberta de livros e documentos." width="569" height="694" loading="lazy" decoding="async">
+                    <figcaption>Gérard de Villefort — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Usa sua autoridade para encobrir segredos.</p>
+                <details id="perfil-villefort" data-character-profile>
+                    <summary>Ler perfil de Gérard de Villefort</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Magistrado ligado à monarquia.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Usa sua autoridade para encobrir segredos.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Responsável pelo encarceramento injusto de Edmond.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Ambição, cálculo e defesa da própria posição.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Perde a razão após as revelações e a tragédia familiar.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">É morto por André, seu filho.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="villefort" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Gérard de Villefort</button>
+            </article>
+            <article id="faria" class="character-card" data-character="faria" data-category="aliados" data-name="Abbé Faria" data-modal-target="personagem-modal">
+                <h3 data-field="name">Abbé Faria</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/faria-edmond.jpg" alt="Gravura de Edmond e do abade Faria, ambos com barba, conversando de perto na prisão." width="595" height="676" loading="lazy" decoding="async">
+                    <figcaption>Faria e Edmond — ilustração do romance. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Educador e portador do segredo do tesouro.</p>
+                <details id="perfil-faria" data-character-profile>
+                    <summary>Ler perfil de Abbé Faria</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Abade e companheiro de prisão.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Educador e portador do segredo do tesouro.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Mentor e amigo de Edmond.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Erudição, generosidade e capacidade de observação.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Morre na prisão após uma crise de sua doença.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Morre após um desabamento no túnel de fuga.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="faria" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Abbé Faria</button>
+            </article>
+            <article id="haydee" class="character-card" data-character="haydee" data-category="aliados" data-name="Haydée" data-modal-target="personagem-modal">
+                <h3 data-field="name">Haydée</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/haydee-vasiliki.jpg" alt="Gravura de Vasiliki sentada em um sofá, com uma menina apoiada em seu colo." width="443" height="529" loading="lazy" decoding="async">
+                    <figcaption>Haydée criança e sua mãe, Vasiliki — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Testemunha do passado de Fernand.</p>
+                <details id="perfil-haydee" data-character-profile>
+                    <summary>Ler perfil de Haydée</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Filha de Ali Pasha de Janina.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Testemunha do passado de Fernand.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Protegida de Edmond; no romance, torna-se seu amor.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Memória, firmeza e afeto.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Parte com Edmond.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Escolhe uma vida com Albert.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="haydee" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Haydée</button>
+            </article>
+            <article id="albert" class="character-card" data-character="albert" data-category="familia" data-name="Albert de Morcerf" data-modal-target="personagem-modal">
+                <h3 data-field="name">Albert de Morcerf</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/albert-convidados.jpg" alt="Gravura de três jovens em um salão, dois em pé conversando e um sentado." width="601" height="693" loading="lazy" decoding="async">
+                    <figcaption>Cena do capítulo O encontro — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Enfrenta o conflito entre lealdade familiar e verdade.</p>
+                <details id="perfil-albert" data-character-profile>
+                    <summary>Ler perfil de Albert de Morcerf</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Filho de Mercédès e Fernand.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Enfrenta o conflito entre lealdade familiar e verdade.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Aproxima-se do conde sem conhecer sua identidade.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Orgulho, impulsividade e capacidade de rever escolhas.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Renuncia ao nome do pai e ingressa no exército.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Sobrevive ao duelo com Edmond e parte com Haydée.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="albert" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Albert de Morcerf</button>
+            </article>
+            <article id="caderousse" class="character-card" data-character="caderousse" data-category="outros" data-name="Caderousse" data-modal-target="personagem-modal">
+                <h3 data-field="name">Caderousse</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/caderousse-gravura.jpg" alt="Gravura de Caderousse junto a uma mesa com garrafas e um copo na mão." width="584" height="652" loading="lazy" decoding="async">
+                    <figcaption>Caderousse — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Conhece a conspiração, mas não impede a injustiça.</p>
+                <details id="perfil-caderousse" data-character-profile>
+                    <summary>Ler perfil de Caderousse</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Vizinho de Edmond no romance.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Conhece a conspiração, mas não impede a injustiça.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Antigo conhecido; mistura culpa e interesse.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Fraqueza moral e cobiça.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">É mortalmente ferido por Benedetto após uma tentativa de roubo.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Ajuda a capturar a frota de Danglars, colaborando com a reparação.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="caderousse" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Caderousse</button>
+            </article>
+            <article id="morrel" class="character-card" data-character="morrel" data-category="aliados" data-name="Monsieur Morrel" data-modal-target="personagem-modal">
+                <h3 data-field="name">Monsieur Morrel</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/morrel-filho.jpg" alt="Gravura de um homem mais velho sentado à mesa, conversando com um jovem de pé ao seu lado." width="593" height="623" loading="lazy" decoding="async">
+                    <figcaption>Monsieur Morrel e seu filho — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Representa a lealdade em meio à traição.</p>
+                <details id="perfil-morrel" data-character-profile>
+                    <summary>Ler perfil de Monsieur Morrel</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Armador e proprietário do Pharaon.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Representa a lealdade em meio à traição.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Patrão e defensor de Edmond.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Honestidade, gratidão e senso de responsabilidade.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">É salvo da falência por Edmond; sua morte ocorre mais tarde.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">É arruinado por Danglars; o conde retribui sua lealdade por meio de seu neto.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="morrel" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Monsieur Morrel</button>
+            </article>
+            <article id="maximilien" class="character-card" data-character="maximilien" data-category="aliados" data-name="Maximilien Morrel" data-modal-target="personagem-modal">
+                <h3 data-field="name">Maximilien Morrel</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/maximilien-gravura.jpg" alt="Gravura de um jovem apoiado em um portão de madeira, junto a um muro coberto de vegetação." width="580" height="690" loading="lazy" decoding="async">
+                    <figcaption>Maximilien no jardim — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Seu amor por Valentine sustenta um caminho de esperança.</p>
+                <details id="perfil-maximilien" data-character-profile>
+                    <summary>Ler perfil de Maximilien Morrel</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Oficial e filho de Monsieur Morrel no romance.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Seu amor por Valentine sustenta um caminho de esperança.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Amigo e protegido do conde.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Lealdade, bravura e devoção.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Reencontra Valentine e pode construir uma vida com ela.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Aparece como neto de Morrel; seu romance com Valentine não é desenvolvido.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="maximilien" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Maximilien Morrel</button>
+            </article>
+            <article id="valentine" class="character-card" data-character="valentine" data-category="familia" data-name="Valentine de Villefort" data-modal-target="personagem-modal">
+                <h3 data-field="name">Valentine de Villefort</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/valentine-gravura.jpg" alt="Gravura de Valentine de vestido longo, sentada em um banco de jardim." width="560" height="682" loading="lazy" decoding="async">
+                    <figcaption>Valentine de Villefort — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>É ameaçada pelos conflitos de herança da família.</p>
+                <details id="perfil-valentine" data-character-profile>
+                    <summary>Ler perfil de Valentine de Villefort</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Filha de Gérard de Villefort e Renée de Saint-Méran.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">É ameaçada pelos conflitos de herança da família.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Protegida por Edmond por seu vínculo com Maximilien.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Bondade e fidelidade aos afetos.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">É salva do envenenamento e se reúne com Maximilien.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Seu arco não é incluído nesta adaptação.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="valentine" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Valentine de Villefort</button>
+            </article>
+            <article id="heloise" class="character-card" data-character="heloise" data-category="familia" data-name="Héloïse de Villefort" data-modal-target="personagem-modal">
+                <h3 data-field="name">Héloïse de Villefort</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/heloise-edouard.jpg" alt="Gravura de uma mulher inclinada sobre um menino que segura um livro, ao lado de uma gaiola com um pássaro." width="584" height="683" loading="lazy" decoding="async">
+                    <figcaption>Héloïse e Édouard de Villefort — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Procura favorecer o filho por meio de envenenamentos.</p>
+                <details id="perfil-heloise" data-character-profile>
+                    <summary>Ler perfil de Héloïse de Villefort</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Segunda esposa de Villefort e mãe de Édouard.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Procura favorecer o filho por meio de envenenamentos.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Suas ações cruzam o plano do conde contra Villefort.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">Ambição familiar e dissimulação.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">Envenena a si mesma e ao filho Édouard.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">A trama de envenenamentos não é adaptada.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="heloise" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Héloïse de Villefort</button>
+            </article>
+            <article id="benedetto" class="character-card" data-character="benedetto" data-category="outros" data-name="Benedetto / Andrea Cavalcanti" data-modal-target="personagem-modal">
+                <h3 data-field="name">Benedetto / Andrea Cavalcanti</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/benedetto-gravura.jpg" alt="Gravura de Andrea Cavalcanti com bigode, casaco e bengala, sentado na borda de uma mesa." width="557" height="719" loading="lazy" decoding="async">
+                    <figcaption>Andrea Cavalcanti / Benedetto — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>Expõe um segredo de filiação e uma tentativa de infanticídio.</p>
+                <details id="perfil-benedetto" data-character-profile>
+                    <summary>Ler perfil de Benedetto / Andrea Cavalcanti</summary>
+                    <dl>
+                        <dt>Identidade</dt>
+                        <dd data-field="identity">Filho de Villefort e da futura Madame Danglars; falso nobre.</dd>
+                        <dt>Papel na história</dt>
+                        <dd data-field="role">Expõe um segredo de filiação e uma tentativa de infanticídio.</dd>
+                        <dt>Relação com Edmond</dt>
+                        <dd data-field="relation">Instrumento do plano de Edmond no romance.</dd>
+                        <dt>Características</dt>
+                        <dd data-field="traits">No livro, oportunismo e violência.</dd>
+                        <dt>Destino no livro</dt>
+                        <dd data-field="book-fate">É julgado e revela publicamente sua origem.</dd>
+                        <dt>Destino no filme de 2024</dt>
+                        <dd data-field="film-fate">Recriado como André: mata Villefort e morre durante a fuga.</dd>
+                    </dl>
+                </details>
+                <!-- main.js revela este botão quando o modal está pronto. -->
+                <button type="button" data-open-character="benedetto" aria-haspopup="dialog"
+                        aria-controls="personagem-modal" hidden>Abrir dossiê de Benedetto / Andrea Cavalcanti</button>
+            </article>
+        </section>
+
+        <!-- dialog sem open começa oculto. O JS preenche os campos com textContent para
+             chamar showModal(), permitir Escape e devolver o foco ao botão de origem. -->
+        <dialog id="personagem-modal" aria-labelledby="modal-nome" aria-describedby="modal-aviso" data-character-dialog>
+            <h2 id="modal-nome" data-modal-field="name">Nome do personagem</h2>
+            <p data-modal-field="description"></p>
+            <p id="modal-aviso">O dossiê inclui os desfechos do livro e do filme de 2024.</p>
+            <dl>
+                <dt>Identidade</dt>
+                <dd data-modal-field="identity">—</dd>
+                <dt>Papel na história</dt>
+                <dd data-modal-field="role">—</dd>
+                <dt>Relação com Edmond</dt>
+                <dd data-modal-field="relation">—</dd>
+                <dt>Características</dt>
+                <dd data-modal-field="traits">—</dd>
+                <dt>Destino no livro</dt>
+                <dd data-modal-field="book-fate">—</dd>
+                <dt>Destino no filme de 2024</dt>
+                <dd data-modal-field="film-fate">—</dd>
+            </dl>
+            <form method="dialog">
+                <button type="submit" autofocus>Fechar dossiê</button>
+            </form>
+        </dialog>
+
+        <aside class="sources" aria-labelledby="fontes-titulo">
+            <h2 id="fontes-titulo">Fontes e leituras</h2>
+            <ul>
+                <li><a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">Romance integral — consulte os capítulos sobre cada personagem.</a></li>
+                <li><a href="https://www.unifrance.org/film/56620/le-comte-de-monte-cristo">Unifrance — ficha do filme e dossiê de imprensa.</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">Sinopse detalhada e elenco da adaptação de 2024 (em francês).</a></li>
+                <li><a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">AlloCiné — comparação dos desfechos do romance e do filme.</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé compartilhado por todas as páginas. -->
+    <footer class="site-footer">
+        <p><strong>MONTECRISTO ARCHIVES</strong></p>
+        <p lang="fr">Attendre et espérer.</p>
+        <nav aria-label="Links rápidos">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html">O Plano</a></li>
+                <li><a href="livro-filme.html">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <p>Projeto educacional inspirado na obra de Alexandre Dumas.</p>
+        <p>Este é um projeto independente, sem vínculo oficial com o filme de 2024.</p>
+        <p><small>Desenvolvido por Ian Falcão.</small></p>
+        <a href="#top">Voltar para o topo</a>
+    </footer>
+</body>
+</html>

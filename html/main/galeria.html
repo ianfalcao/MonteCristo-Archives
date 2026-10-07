@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ian Falcao">
+    <meta name="description" content="Acervo temático de lugares, documentos, mapas, ilustrações e personagens.">
+    <title>Galeria | MonteCristo Archives</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/main.js" defer></script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <a class="site-logo" href="/Monte_cristo/index.html" aria-label="MonteCristo Archives — Início">
+            <span>MONTECRISTO</span><br>
+            <span>ARCHIVES</span>
+        </a>
+        <button type="button" class="menu-toggle" data-menu-toggle
+                aria-controls="menu-principal" aria-expanded="true" hidden>
+            Menu principal
+        </button>
+        <nav id="menu-principal" aria-label="Navegação principal">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html">O Plano</a></li>
+                <li><a href="livro-filme.html">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+        <header class="page-intro">
+            <p>Arquivo 07 · Acervo visual</p>
+            <h1>Galeria</h1>
+            <p>Lugares, documentos e representações do universo de Monte Cristo.</p>
+
+        </header>
+
+        <!-- main.js habilita os filtros após registrar seus eventos. -->
+        <fieldset class="filters" data-gallery-filters disabled>
+            <legend>Filtrar o acervo</legend>
+            <button type="button" data-filter="todos" aria-controls="galeria-itens" aria-pressed="true">Todos</button>
+            <button type="button" data-filter="lugares" aria-controls="galeria-itens" aria-pressed="false">Lugares</button>
+            <button type="button" data-filter="historia" aria-controls="galeria-itens" aria-pressed="false">História</button>
+            <button type="button" data-filter="personagens" aria-controls="galeria-itens" aria-pressed="false">Personagens</button>
+            <button type="button" data-filter="arte" aria-controls="galeria-itens" aria-pressed="false">Arte</button>
+        </fieldset>
+        <p role="status" data-gallery-status>9 espaços no acervo · 9 imagens disponíveis</p>
+        <section id="galeria-itens" class="gallery" aria-labelledby="acervo-titulo">
+            <h2 id="acervo-titulo">Imagens do arquivo</h2>
+            <figure id="imagem-marselha" class="archive-illustration" data-category="lugares" data-gallery-item="marselha" data-image-status="available">
+                <img src="../../img/marselha-porto.jpg" alt="Panorama do Porto Velho de Marselha, com barcos, edifícios à beira-mar e a basílica ao fundo." width="1280" height="543" loading="lazy" decoding="async">
+                <a href="../../img/marselha-porto.jpg">Ver imagem: Marselha — fotografia contemporânea do Porto Velho</a>
+                <button type="button" data-open-lightbox="marselha" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar imagem</button>
+                <figcaption id="legenda-marselha"><span data-image-title>Marselha — fotografia contemporânea do Porto Velho.</span>
+                    <a class="image-credit" href="#credito-marselha">Fonte e licença</a>
+                </figcaption>
+            </figure>
+            <figure id="imagem-chateau" data-category="lugares" data-gallery-item="chateau" data-image-status="available">
+                <img src="../../img/castle_chateue.jpg" alt="Fortaleza do Château d’If sobre uma ilha rochosa, cercada pelo mar." width="612" height="408" loading="lazy">
+                <a href="../../img/castle_chateue.jpg">Ver imagem: Château d’If</a>
+                <!-- O link direto funciona sem JS; o botão abre a lightbox. -->
+                <button type="button" data-open-lightbox="chateau" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar Château d’If</button>
+                <figcaption id="legenda-chateau">Château d’If.</figcaption>
+            </figure>
+            <figure id="imagem-montecristo" class="archive-illustration" data-category="lugares" data-gallery-item="montecristo" data-image-status="available">
+                <img src="../../img/montecristo-satelite.jpg" alt="Ilha rochosa de Montecristo vista de cima, cercada pelas águas azuis do Mediterrâneo." width="1703" height="1880" loading="lazy" decoding="async">
+                <a href="../../img/montecristo-satelite.jpg">Ver imagem: Montecristo — vista de satélite (2022)</a>
+                <button type="button" data-open-lightbox="montecristo" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar imagem</button>
+                <figcaption id="legenda-montecristo"><span data-image-title>Montecristo — vista de satélite (2022).</span>
+                    <a class="image-credit" href="#credito-montecristo">Fonte e licença</a>
+                </figcaption>
+            </figure>
+            <figure id="imagem-elba" class="archive-illustration" data-category="lugares" data-gallery-item="elba" data-image-status="available">
+                <img src="../../img/elba-portoferraio.jpg" alt="Portoferraio, na ilha de Elba, com casario colorido, fortificações e embarcações na baía." width="2559" height="634" loading="lazy" decoding="async">
+                <a href="../../img/elba-portoferraio.jpg">Ver imagem: Elba — panorama de Portoferraio (2009)</a>
+                <button type="button" data-open-lightbox="elba" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar imagem</button>
+                <figcaption id="legenda-elba"><span data-image-title>Elba — panorama de Portoferraio (2009).</span>
+                    <a class="image-credit" href="#credito-elba">Fonte e licença</a>
+                </figcaption>
+            </figure>
+            <figure id="imagem-paris" class="archive-illustration" data-category="lugares" data-gallery-item="paris" data-image-status="available">
+                <img src="../../img/paris-seine-1830.jpg" alt="Litografia de Paris com uma multidão sobre o Sena congelado, uma ponte e edifícios ao fundo." width="1280" height="819" loading="lazy" decoding="async">
+                <a href="../../img/paris-seine-1830.jpg">Ver imagem: Paris — o Sena no Pont de la Grève (1830)</a>
+                <button type="button" data-open-lightbox="paris" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar imagem</button>
+                <figcaption id="legenda-paris"><span data-image-title>Paris — o Sena no Pont de la Grève (1830).</span>
+                    <a class="image-credit" href="#credito-paris">Fonte e licença</a>
+                </figcaption>
+            </figure>
+            <figure id="imagem-documentos" class="archive-illustration" data-category="historia" data-gallery-item="documentos" data-image-status="available">
+                <img src="../../img/napoleao-abdicacao-1815.jpg" alt="Primeira página manuscrita em francês da declaração de abdicação de Napoleão, datada de 22 de junho de 1815, com selo vermelho." width="2521" height="3849" loading="lazy" decoding="async">
+                <a href="../../img/napoleao-abdicacao-1815.jpg">Ver imagem: Abdicação de Napoleão — 22 de junho de 1815</a>
+                <button type="button" data-open-lightbox="documentos" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar imagem</button>
+                <figcaption id="legenda-documentos"><span data-image-title>Abdicação de Napoleão — 22 de junho de 1815.</span>
+                    <a class="image-credit" href="#credito-documentos">Fonte e licença</a>
+                </figcaption>
+            </figure>
+            <figure id="imagem-mapas" class="archive-illustration" data-category="historia" data-gallery-item="mapas" data-image-status="available">
+                <img src="../../img/mapa-mediterraneo.jpg" alt="Mapa em preto e branco do Mediterrâneo, com costas, ilhas, nomes geográficos e indicações de profundidade." width="1280" height="632" loading="lazy" decoding="async">
+                <a href="../../img/mapa-mediterraneo.jpg">Ver imagem: Mapa do mar Mediterrâneo — Popular Science Monthly</a>
+                <button type="button" data-open-lightbox="mapas" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar imagem</button>
+                <figcaption id="legenda-mapas"><span data-image-title>Mapa do mar Mediterrâneo — Popular Science Monthly.</span>
+                    <a class="image-credit" href="#credito-mapas">Fonte e licença</a>
+                </figcaption>
+            </figure>
+            <figure id="imagem-ilustracoes" class="archive-illustration" data-category="arte" data-gallery-item="ilustracoes" data-image-status="available">
+                <img src="../../img/edmond-dantes.jpg" alt="Gravura de Edmond jovem, de boné e camisa aberta, junto à amurada e às cordas de um navio." width="595" height="705" loading="lazy" decoding="async">
+                <a href="../../img/edmond-dantes.jpg">Ver imagem: Edmond Dantès — ilustração do romance</a>
+                <button type="button" data-open-lightbox="ilustracoes" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar imagem</button>
+                <figcaption id="legenda-ilustracoes"><span data-image-title>Edmond Dantès — ilustração do romance.</span>
+                    <a class="image-credit" href="#credito-gravuras">Fonte e licença</a>
+                </figcaption>
+            </figure>
+            <figure id="imagem-conde" data-category="personagens" data-gallery-item="conde" data-image-status="available">
+                <img src="../../img/Conde.jpeg" alt="Homem de cartola, sobretudo e bengala em um salão com bustos de mármore." width="600" height="400" loading="lazy">
+                <a href="../../img/Conde.jpeg">Ver imagem: Conde de Monte Cristo</a>
+                <!-- O link direto funciona sem JS; o botão abre a lightbox. -->
+                <button type="button" data-open-lightbox="conde" aria-haspopup="dialog"
+                        aria-controls="galeria-lightbox" hidden>Ampliar Conde de Monte Cristo</button>
+                <figcaption id="legenda-conde">Conde de Monte Cristo.</figcaption>
+            </figure>
+        </section>
+
+        <!-- dialog sem open é inicialmente oculto. Preencher src, alt e legenda antes de
+             showModal(); permitir Escape e retornar o foco ao botão que abriu a imagem. -->
+        <dialog id="galeria-lightbox" class="lightbox" aria-labelledby="lightbox-titulo" data-lightbox>
+            <h2 id="lightbox-titulo">Imagem ampliada</h2>
+            <figure>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" data-lightbox-image>
+                <figcaption data-lightbox-caption>Legenda da imagem selecionada.</figcaption>
+            </figure>
+            <p data-lightbox-description></p>
+            <div class="lightbox-controls" role="group" aria-label="Navegar pelas imagens">
+                <button type="button" data-lightbox-prev aria-label="Imagem anterior">← Anterior</button>
+                <p role="status" data-lightbox-status></p>
+                <button type="button" data-lightbox-next aria-label="Próxima imagem">Próxima →</button>
+            </div>
+            <form method="dialog">
+                <button type="submit" autofocus>Fechar imagem</button>
+            </form>
+        </dialog>
+
+        <aside class="sources image-credits" aria-labelledby="creditos-titulo">
+            <h2 id="creditos-titulo">Créditos das imagens</h2>
+            <p>As novas imagens estão armazenadas no próprio projeto. Fotografias atuais, documentos e ilustrações literárias estão identificados nas legendas.</p>
+            <ul>
+                <li id="credito-marselha"><strong>Marselha — fotografia contemporânea do Porto Velho</strong> — Velvet. <a href="https://commons.wikimedia.org/wiki/File:Marseille_vieux_port_pano.jpg">Fonte no Wikimedia Commons</a>. <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+                <li id="credito-montecristo"><strong>Montecristo — vista de satélite (2022)</strong> — União Europeia, Copernicus Sentinel-2 — Contains modified Copernicus Sentinel data 2022. <a href="https://commons.wikimedia.org/wiki/File:Montecristo_island.jpg">Fonte no Wikimedia Commons</a>. <a href="https://commons.wikimedia.org/wiki/File:Montecristo_island.jpg">Dados Copernicus Sentinel: uso permitido com atribuição</a>.</li>
+                <li id="credito-elba"><strong>Elba — panorama de Portoferraio (2009)</strong> — ByB — Bruno Barral. <a href="https://commons.wikimedia.org/wiki/File:Panorama_portoferraio.jpg">Fonte no Wikimedia Commons</a>. <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</li>
+                <li id="credito-paris"><strong>Paris — o Sena no Pont de la Grève (1830)</strong> — Victor Adam / Alphonse Bichebois — Paris Musées, musée Carnavalet. <a href="https://commons.wikimedia.org/wiki/File:Album_Janvier_1830_La_seine_au_pont_de_la_grève,_G.8929(1).jpg">Fonte no Wikimedia Commons</a>. <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</li>
+                <li id="credito-documentos"><strong>Abdicação de Napoleão — 22 de junho de 1815</strong> — Fotografia: Rama. <a href="https://commons.wikimedia.org/wiki/File:Second_abdication_act_of_Napoleon-IMG_0525.JPG">Fonte no Wikimedia Commons</a>. <a href="https://creativecommons.org/licenses/by-sa/3.0/fr/">CC BY-SA 3.0 França</a>.</li>
+                <li id="credito-mapas"><strong>Mapa do mar Mediterrâneo — Popular Science Monthly</strong> — Autoria não identificada — Popular Science Monthly, volume 9. <a href="https://commons.wikimedia.org/wiki/File:PSM_V09_D742_Map_of_the_mediterranean_sea.jpg">Fonte no Wikimedia Commons</a>. <a href="https://commons.wikimedia.org/wiki/File:PSM_V09_D742_Map_of_the_mediterranean_sea.jpg">Domínio público</a>.</li>
+                <li id="credito-gravuras"><strong>Gravuras do romance</strong> — autoria individual não identificada. A folha de rosto da edição credita desenhos a G. Staal, J. A. Beaucé e outros artistas. <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">Edição ilustrada do Project Gutenberg</a>, preparada por voluntários anônimos, Dan Muller e David Widger. <a href="https://www.gutenberg.org/ebooks/1184">Domínio público nos EUA, conforme o catálogo da edição</a>.</li>
+            </ul>
+            <p id="credito-acervo-original">Os arquivos baixados foram preservados sem edição. As imagens de Château d’If e do conde já pertenciam ao acervo do projeto; suas fontes não estavam registradas. <a href="../../img/CREDITOS.md">Consultar o registro de arquivos, fontes e licenças</a>.</p>
+        </aside>
+    </main>
+
+    <!-- Rodapé compartilhado por todas as páginas. -->
+    <footer class="site-footer">
+        <p><strong>MONTECRISTO ARCHIVES</strong></p>
+        <p lang="fr">Attendre et espérer.</p>
+        <nav aria-label="Links rápidos">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html">O Plano</a></li>
+                <li><a href="livro-filme.html">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <p>Projeto educacional inspirado na obra de Alexandre Dumas.</p>
+        <p>Este é um projeto independente, sem vínculo oficial com o filme de 2024.</p>
+        <p><small>Desenvolvido por Ian Falcão.</small></p>
+        <a href="#top">Voltar para o topo</a>
+    </footer>
+</body>
+</html>

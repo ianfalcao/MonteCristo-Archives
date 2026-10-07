@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ian Falcao">
+    <meta name="description" content="Compare personagens e acontecimentos do romance com o filme francês de 2024.">
+    <title>Livro × Filme | MonteCristo Archives</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/main.js" defer></script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <a class="site-logo" href="/Monte_cristo/index.html" aria-label="MonteCristo Archives — Início">
+            <span>MONTECRISTO</span><br>
+            <span>ARCHIVES</span>
+        </a>
+        <button type="button" class="menu-toggle" data-menu-toggle
+                aria-controls="menu-principal" aria-expanded="true" hidden>
+            Menu principal
+        </button>
+        <nav id="menu-principal" aria-label="Navegação principal">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html">O Plano</a></li>
+                <li><a href="livro-filme.html" aria-current="page">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+        <header class="page-intro">
+            <p>Arquivo 05 · Duas leituras</p>
+            <h1>Livro × Filme</h1>
+            <p>O Conde de Monte Cristo — Alexandre Dumas · Le Comte de Monte-Cristo — Filme de 2024</p>
+            <p><strong>Aviso:</strong> esta página revela acontecimentos e desfechos da história.</p>
+        </header>
+
+        <div class="edition-images" aria-label="Imagens das duas linguagens: literatura e cinema">
+            <figure class="archive-illustration">
+                <img src="../../img/livro-folha-rosto.jpg" alt="Folha de rosto com o título Count of Monte-Cristo, o nome Alexandre Dumas e a indicação do primeiro volume." width="667" height="993" loading="lazy" decoding="async">
+                <figcaption>Folha de rosto do romance — edição ilustrada (1888). <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+            </figure>
+            <figure class="archive-illustration">
+                <img src="../../img/Conde.jpeg" alt="Homem de cartola e sobretudo caminha com bengala em um salão com bustos de mármore." width="4252" height="2835" loading="lazy" decoding="async">
+                <figcaption>Representação cinematográfica do conde — acervo original do projeto. <a class="image-credit" href="galeria.html#credito-acervo-original">Fonte e licença</a></figcaption>
+            </figure>
+        </div>
+
+        <p>O longa de Matthieu Delaporte e Alexandre de La Patellière reorganiza personagens e acontecimentos. Esta comparação se refere ao filme francês de 2024, não à série televisiva do mesmo ano.</p>
+        <!-- O JavaScript habilita o select e filtra os artigos.
+             Até lá, o índice de links abaixo já permite escolher um assunto. -->
+        <fieldset class="filters" data-comparison-categories disabled>
+            <legend>Categoria da comparação</legend>
+            <button type="button" data-filter="todos" aria-pressed="true" aria-controls="comparacoes">Todos</button>
+            <button type="button" data-filter="personagens" aria-pressed="false" aria-controls="comparacoes">Personagens</button>
+            <button type="button" data-filter="acontecimentos" aria-pressed="false" aria-controls="comparacoes">Acontecimentos</button>
+            <button type="button" data-filter="final" aria-pressed="false" aria-controls="comparacoes">Final</button>
+        </fieldset>
+        <label for="comparacao-selecao">Selecionar personagem ou acontecimento</label>
+        <select id="comparacao-selecao" name="comparacao" data-comparison-select aria-controls="comparacoes" disabled>
+            <option value="todos">Todas as comparações</option>
+            <option value="edmond">Edmond</option>
+            <option value="mercedes">Mercédès</option>
+            <option value="fernand">Fernand</option>
+            <option value="danglars">Danglars</option>
+            <option value="villefort">Villefort</option>
+            <option value="haydee">Haydée</option>
+            <option value="albert">Albert</option>
+            <option value="andrea">Andrea / Benedetto</option>
+            <option value="caderousse">Caderousse</option>
+            <option value="morrel">Morrel</option>
+            <option value="valentine">Valentine</option>
+            <option value="final">Final da história</option>
+            <option value="prisao">Prisão e fuga</option>
+            <option value="julgamento">O julgamento</option>
+        </select>
+        <nav aria-label="Índice de comparações">
+            <ul>
+                <li><a href="#comparacao-edmond">Edmond</a></li>
+                <li><a href="#comparacao-mercedes">Mercédès</a></li>
+                <li><a href="#comparacao-fernand">Fernand</a></li>
+                <li><a href="#comparacao-danglars">Danglars</a></li>
+                <li><a href="#comparacao-villefort">Villefort</a></li>
+                <li><a href="#comparacao-haydee">Haydée</a></li>
+                <li><a href="#comparacao-albert">Albert</a></li>
+                <li><a href="#comparacao-andrea">Andrea / Benedetto</a></li>
+                <li><a href="#comparacao-caderousse">Caderousse</a></li>
+                <li><a href="#comparacao-morrel">Morrel</a></li>
+                <li><a href="#comparacao-valentine">Valentine</a></li>
+                <li><a href="#comparacao-final">Final da história</a></li>
+                <li><a href="#comparacao-prisao">Prisão e fuga</a></li>
+                <li><a href="#comparacao-julgamento">O julgamento</a></li>
+            </ul>
+        </nav>
+        <p role="status" data-comparison-status>14 comparações disponíveis</p>
+        <div id="comparacoes">
+            <article id="comparacao-edmond" class="comparison" data-comparison="edmond">
+                <h2>Edmond</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-edmond">
+                        <h3 id="livro-edmond">LIVRO</h3>
+                        <p>Sua reinvenção inclui várias identidades; ao final, parte com Haydée.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-edmond">
+                        <h3 id="filme-edmond">FILME 2024</h3>
+                        <p>O encerramento o mostra partindo sozinho, após escrever a Mercédès.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-mercedes" class="comparison" data-comparison="mercedes">
+                <h2>Mercédès</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-mercedes">
+                        <h3 id="livro-mercedes">LIVRO</h3>
+                        <p>Deixa Fernand e volta a Marselha; não retoma a vida amorosa com Edmond.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-mercedes">
+                        <h3 id="filme-mercedes">FILME 2024</h3>
+                        <p>Pede a Edmond que poupe Albert e recebe sua carta de despedida.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-fernand" class="comparison" data-comparison="fernand">
+                <h2>Fernand</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-fernand">
+                        <h3 id="livro-fernand">LIVRO</h3>
+                        <p>A exposição de sua traição em Janina leva à desonra e ao suicídio.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-fernand">
+                        <h3 id="filme-fernand">FILME 2024</h3>
+                        <p>Enfrenta Edmond em duelo e é deixado vivo.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-danglars" class="comparison" data-comparison="danglars">
+                <h2>Danglars</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-danglars">
+                        <h3 id="livro-danglars">LIVRO</h3>
+                        <p>Começa como funcionário do Pharaon e torna-se banqueiro. Perde sua fortuna; Edmond o perdoa.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-danglars">
+                        <h3 id="filme-danglars">FILME 2024</h3>
+                        <p>Começa como capitão e torna-se um rico comerciante. Sua frota e seus bens são atingidos pelo plano.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-villefort" class="comparison" data-comparison="villefort">
+                <h2>Villefort</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-villefort">
+                        <h3 id="livro-villefort">LIVRO</h3>
+                        <p>Protege o pai bonapartista. A revelação sobre Benedetto e as mortes em sua casa o levam à loucura.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-villefort">
+                        <h3 id="filme-villefort">FILME 2024</h3>
+                        <p>O segredo político envolve sua irmã Angèle. André, seu filho, o mata.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-haydee" class="comparison" data-comparison="haydee">
+                <h2>Haydée</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-haydee">
+                        <h3 id="livro-haydee">LIVRO</h3>
+                        <p>Denuncia Fernand e termina ao lado de Edmond, por quem se apaixona.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-haydee">
+                        <h3 id="filme-haydee">FILME 2024</h3>
+                        <p>Apaixona-se por Albert e parte com ele.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-albert" class="comparison" data-comparison="albert">
+                <h2>Albert</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-albert">
+                        <h3 id="livro-albert">LIVRO</h3>
+                        <p>Rompe com o legado do pai e ingressa no exército. Não forma um casal com Haydée.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-albert">
+                        <h3 id="filme-albert">FILME 2024</h3>
+                        <p>Sua relação com Haydée ocupa o centro do desfecho amoroso.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-andrea" class="comparison" data-comparison="andrea">
+                <h2>Andrea / Benedetto</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-andrea">
+                        <h3 id="livro-andrea">LIVRO</h3>
+                        <p>Benedetto assume uma falsa identidade aristocrática e revela ser filho de Villefort durante seu julgamento.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-andrea">
+                        <h3 id="filme-andrea">FILME 2024</h3>
+                        <p>André é um aliado do conde; mata o pai e morre na fuga.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_(2024_film)">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-caderousse" class="comparison" data-comparison="caderousse">
+                <h2>Caderousse</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-caderousse">
+                        <h3 id="livro-caderousse">LIVRO</h3>
+                        <p>Vizinho de Edmond, envolve-se em crimes e é morto por Benedetto.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-caderousse">
+                        <h3 id="filme-caderousse">FILME 2024</h3>
+                        <p>É marinheiro e ajuda na captura da frota de Danglars.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-morrel" class="comparison" data-comparison="morrel">
+                <h2>Morrel</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-morrel">
+                        <h3 id="livro-morrel">LIVRO</h3>
+                        <p>Monsieur Morrel é salvo da falência. Seu filho Maximilien ama Valentine.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-morrel">
+                        <h3 id="filme-morrel">FILME 2024</h3>
+                        <p>O armador perde seu negócio. Maximilien aparece como seu neto, sem o romance com Valentine.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-valentine" class="comparison" data-comparison="valentine">
+                <h2>Valentine</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-valentine">
+                        <h3 id="livro-valentine">LIVRO</h3>
+                        <p>Sobrevive ao envenenamento graças ao conde e se reúne com Maximilien.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-valentine">
+                        <h3 id="filme-valentine">FILME 2024</h3>
+                        <p>A trama de Valentine e dos envenenamentos não é incluída.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://www.unifrance.org/film/56620/le-comte-de-monte-cristo">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-final" class="comparison" data-comparison="final">
+                <h2>Final da história</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-final">
+                        <h3 id="livro-final">LIVRO</h3>
+                        <p>A esperança está ligada ao reencontro de Valentine e Maximilien e à partida de Edmond com Haydée.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-final">
+                        <h3 id="filme-final">FILME 2024</h3>
+                        <p>Haydée e Albert seguem juntos; Edmond deixa uma carta a Mercédès e parte.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">fonte sobre a adaptação</a>.</small></p>
+            </article>
+            <article id="comparacao-prisao" class="comparison" data-comparison="prisao">
+                <h2>Prisão e fuga</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-prisao">
+                        <h3 id="livro-prisao">LIVRO</h3>
+                        <p>Faria morre após uma crise de sua doença. Edmond foge ocupando seu lugar no saco funerário.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-prisao">
+                        <h3 id="filme-prisao">FILME 2024</h3>
+                        <p>Faria morre no desabamento do túnel. Edmond também escapa no saco funerário.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">sinopse do filme de 2024</a>.</small></p>
+            </article>
+            <article id="comparacao-julgamento" class="comparison" data-comparison="julgamento">
+                <h2>O julgamento</h2>
+                <div class="comparison-columns">
+                    <section aria-labelledby="livro-julgamento">
+                        <h3 id="livro-julgamento">LIVRO</h3>
+                        <p>Benedetto revela sua filiação durante o próprio julgamento. Villefort termina em colapso psicológico.</p>
+                    </section>
+                    <p class="comparison-versus">versus</p>
+                    <section aria-labelledby="filme-julgamento">
+                        <h3 id="filme-julgamento">FILME 2024</h3>
+                        <p>André revela sua origem no processo envolvendo Danglars e depois mata Villefort.</p>
+                    </section>
+                </div>
+                <p><small>Referências: <a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">romance integral</a> e <a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">sinopse do filme de 2024</a>.</small></p>
+            </article>
+        </div>
+
+        <aside class="sources" aria-labelledby="fontes-titulo">
+            <h2 id="fontes-titulo">Fontes e leituras</h2>
+            <ul>
+                <li><a href="https://www.unifrance.org/film/56620/le-comte-de-monte-cristo">Unifrance — ficha e dossiê de imprensa do filme de 2024.</a></li>
+                <li><a href="https://www.allocine.fr/article/fichearticle_gen_carticle=1000092641.html">AlloCiné — análise dos finais com o pesquisador Sylvain Ledda.</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Le_Comte_de_Monte-Cristo_(film,_2024)">Sinopse detalhada e elenco do filme (em francês).</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé compartilhado por todas as páginas. -->
+    <footer class="site-footer">
+        <p><strong>MONTECRISTO ARCHIVES</strong></p>
+        <p lang="fr">Attendre et espérer.</p>
+        <nav aria-label="Links rápidos">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html">O Plano</a></li>
+                <li><a href="livro-filme.html">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <p>Projeto educacional inspirado na obra de Alexandre Dumas.</p>
+        <p>Este é um projeto independente, sem vínculo oficial com o filme de 2024.</p>
+        <p><small>Desenvolvido por Ian Falcão.</small></p>
+        <a href="#top">Voltar para o topo</a>
+    </footer>
+</body>
+</html>

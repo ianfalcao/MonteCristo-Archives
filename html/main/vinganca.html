@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ian Falcao">
+    <meta name="description" content="Um painel de investigação com os dossiês de Fernand, Danglars e Villefort.">
+    <title>O Plano | MonteCristo Archives</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/main.js" defer></script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <a class="site-logo" href="/Monte_cristo/index.html" aria-label="MonteCristo Archives — Início">
+            <span>MONTECRISTO</span><br>
+            <span>ARCHIVES</span>
+        </a>
+        <button type="button" class="menu-toggle" data-menu-toggle
+                aria-controls="menu-principal" aria-expanded="true" hidden>
+            Menu principal
+        </button>
+        <nav id="menu-principal" aria-label="Navegação principal">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html" aria-current="page">O Plano</a></li>
+                <li><a href="livro-filme.html">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+        <header class="page-intro">
+            <p>Arquivo 04 · Painel investigativo</p>
+            <h1>O Plano</h1>
+            <p>Dossiês baseados no romance: motivos, segredos e consequências da vingança.</p>
+            <p><strong>Aviso:</strong> esta página revela acontecimentos e desfechos da história.</p>
+        </header>
+        <section class="investigation-board" aria-labelledby="painel-titulo">
+            <h2 id="painel-titulo">O centro da investigação</h2>
+            <article id="edmond-central" class="dossier-center" data-node="edmond">
+                <h3>EDMOND DANTÈS<br>CONDE DE MONTE CRISTO</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/conde-gravura.jpg" alt="Gravura do conde de pé, com casaco elegante e bengala, ao lado de uma mesa com cartola." width="545" height="710" loading="lazy" decoding="async">
+                    <figcaption>O Conde de Monte Cristo — ilustração do romance. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <p>A vítima da denúncia torna-se o articulador de um plano que expõe seus antigos perseguidores.</p>
+                <nav aria-label="Alvos do plano">
+                    <ul>
+                        <li><a href="#dossie-fernand">Dossiê 01 — Fernand</a></li>
+                        <li><a href="#dossie-danglars">Dossiê 02 — Danglars</a></li>
+                        <li><a href="#dossie-villefort">Dossiê 03 — Villefort</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <article id="dossie-fernand" class="dossier" data-node="fernand" data-source="edmond-central" data-target="dossie-fernand">
+                <h3>DOSSIÊ 01 — FERNAND MONDEGO</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/fernand-gravura.jpg" alt="Gravura de Fernand com uniforme militar, medalhas e chapéu apoiado ao lado." width="574" height="682" loading="lazy" decoding="async">
+                    <figcaption>Fernand, conde de Morcerf — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <div class="dossier-controls" data-dossier-controls hidden>
+                    <button type="button" data-select-dossier="fernand" aria-controls="etapas-fernand" aria-expanded="false">Investigar Fernand</button>
+                    <button type="button" data-dossier-next aria-controls="etapas-fernand" disabled>Revelar próxima etapa</button>
+                    <button type="button" data-dossier-reset disabled>Reiniciar dossiê</button>
+                    <p role="status" data-dossier-status>Selecione o alvo para iniciar.</p>
+                </div>
+                <dl id="etapas-fernand">
+                    <div data-dossier-step>
+                        <dt>Crime</dt>
+                        <dd>Traição motivada pelo ciúme e por Mercédès.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Segredo</dt>
+                        <dd>A traição a Ali Pasha de Janina e a venda de Haydée e de sua mãe.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Elemento utilizado por Monte Cristo</dt>
+                        <dd>Haydée: seu testemunho revela o passado de Fernand.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Consequência</dt>
+                        <dd>Destruição de sua reputação e ruptura familiar; Fernand se suicida.</dd>
+                    </div>
+                </dl>
+                <p>Conexão no arquivo: <a href="personagens.html#haydee">Haydée</a>.</p>
+                <a href="#edmond-central">Voltar ao centro do plano</a>
+            </article>
+            <article id="dossie-danglars" class="dossier" data-node="danglars" data-source="edmond-central" data-target="dossie-danglars">
+                <h3>DOSSIÊ 02 — DANGLARS</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/danglars-gravura.jpg" alt="Gravura de Danglars de braços cruzados, apoiado em um muro, diante do mar." width="600" height="698" loading="lazy" decoding="async">
+                    <figcaption>Danglars — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <div class="dossier-controls" data-dossier-controls hidden>
+                    <button type="button" data-select-dossier="danglars" aria-controls="etapas-danglars" aria-expanded="false">Investigar Danglars</button>
+                    <button type="button" data-dossier-next aria-controls="etapas-danglars" disabled>Revelar próxima etapa</button>
+                    <button type="button" data-dossier-reset disabled>Reiniciar dossiê</button>
+                    <p role="status" data-dossier-status>Selecione o alvo para iniciar.</p>
+                </div>
+                <dl id="etapas-danglars">
+                    <div data-dossier-step>
+                        <dt>Crime</dt>
+                        <dd>Participação na denúncia contra Edmond.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Fraqueza</dt>
+                        <dd>Ganância.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Elemento utilizado por Monte Cristo</dt>
+                        <dd>Dinheiro, crédito e manipulação financeira.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Consequência</dt>
+                        <dd>Ruína financeira; Edmond acaba por poupar sua vida.</dd>
+                    </div>
+                </dl>
+                <p>Conexão no arquivo: <a href="personagens.html#danglars">Danglars</a>.</p>
+                <a href="#edmond-central">Voltar ao centro do plano</a>
+            </article>
+            <article id="dossie-villefort" class="dossier" data-node="villefort" data-source="edmond-central" data-target="dossie-villefort">
+                <h3>DOSSIÊ 03 — VILLEFORT</h3>
+                <figure class="archive-illustration">
+                    <img src="../../img/villefort-gravura.jpg" alt="Gravura de Villefort de pé, com roupa escura, ao lado de uma mesa coberta de livros e documentos." width="569" height="694" loading="lazy" decoding="async">
+                    <figcaption>Gérard de Villefort — edição ilustrada. <a class="image-credit" href="galeria.html#credito-gravuras">Fonte e licença</a></figcaption>
+                </figure>
+                <div class="dossier-controls" data-dossier-controls hidden>
+                    <button type="button" data-select-dossier="villefort" aria-controls="etapas-villefort" aria-expanded="false">Investigar Villefort</button>
+                    <button type="button" data-dossier-next aria-controls="etapas-villefort" disabled>Revelar próxima etapa</button>
+                    <button type="button" data-dossier-reset disabled>Reiniciar dossiê</button>
+                    <p role="status" data-dossier-status>Selecione o alvo para iniciar.</p>
+                </div>
+                <dl id="etapas-villefort">
+                    <div data-dossier-step>
+                        <dt>Crime</dt>
+                        <dd>Mandar encarcerar Edmond para proteger sua carreira e ocultar o vínculo de seu pai com o bonapartismo.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Fraqueza</dt>
+                        <dd>Segredos familiares.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Elemento utilizado por Monte Cristo</dt>
+                        <dd>Benedetto e a revelação do passado de Villefort.</dd>
+                    </div>
+                    <div data-dossier-step>
+                        <dt>Consequência</dt>
+                        <dd>Destruição familiar e colapso psicológico.</dd>
+                    </div>
+                </dl>
+                <p>Conexão no arquivo: <a href="personagens.html#benedetto">Benedetto</a>.</p>
+                <a href="#edmond-central">Voltar ao centro do plano</a>
+            </article>
+        </section>
+        <section aria-labelledby="limites-titulo">
+            <h2 id="limites-titulo">Quem controla as consequências?</h2>
+            <p>As famílias dos alvos não são apenas extensões de seus crimes. Quando inocentes sofrem, o conde precisa rever a convicção de que sua vontade equivale à justiça.</p>
+            <a href="historia.html#consequencias">Ler sobre as consequências</a>
+        </section>
+
+        <aside class="sources" aria-labelledby="fontes-titulo">
+            <h2 id="fontes-titulo">Fontes e leituras</h2>
+            <ul>
+                <li><a href="https://www.gutenberg.org/files/1184/1184-h/1184-h.htm">Romance integral — acusações, julgamento e consequências da vingança.</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Rodapé compartilhado por todas as páginas. -->
+    <footer class="site-footer">
+        <p><strong>MONTECRISTO ARCHIVES</strong></p>
+        <p lang="fr">Attendre et espérer.</p>
+        <nav aria-label="Links rápidos">
+            <ul>
+                <li><a href="/Monte_cristo/index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+                <li><a href="timeline.html">Cronologia</a></li>
+                <li><a href="vinganca.html">O Plano</a></li>
+                <li><a href="livro-filme.html">Livro × Filme</a></li>
+                <li><a href="historia-real.html">História Real</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <p>Projeto educacional inspirado na obra de Alexandre Dumas.</p>
+        <p>Este é um projeto independente, sem vínculo oficial com o filme de 2024.</p>
+        <p><small>Desenvolvido por Ian Falcão.</small></p>
+        <a href="#top">Voltar para o topo</a>
+    </footer>
+</body>
+</html>
