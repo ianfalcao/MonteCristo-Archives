@@ -14,7 +14,7 @@ O projeto foi desenvolvido para praticar e aprofundar os conhecimentos de **CSS 
 
 ## Como visualizar
 
-Baixe ou clone o projeto e abra o arquivo `index.html` no navegador.
+Baixe ou clone o projeto e abra o arquivo `index.html` no navegador ou acesse https://montecristoarchives.vercel.app/
 
 ---
 
